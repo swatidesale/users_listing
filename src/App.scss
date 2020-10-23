@@ -1,0 +1,120 @@
+$font-size-sm: 13px;
+$white: #FFF;
+$gray: #AAA;
+$gray-2: #E1E1E1;
+$dark-gray: #494848;
+
+.users_listing_header {
+  text-align: center;
+  font-size: 34px;
+}
+
+.category_section {
+  padding-bottom: 25px;
+
+  &:last-of-type,
+  &.last {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.page-module {
+  line-height: 1.4
+}
+
+.userlist {
+
+  .user {
+    font-size: $font-size-sm;
+    font-weight: 500;
+    line-height: 1.4;
+    height: 420px;
+    overflow: hidden;
+    padding: 10px;
+    border: 1px solid $white;
+    margin: 0 10px 25px 0;
+    display: block;
+    text-transform: capitalize;
+    text-align: center;
+
+
+    .user-img {
+      position: relative;
+      height: 307px;
+      line-height: 1;
+      display: block;
+      text-align: center;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      max-height: 297px;
+      max-width: 297px;
+      margin: 0 auto;
+      outline: none;
+    }
+
+    .user-img-default {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: opacity 500ms ease-in-out;
+    }
+    
+    .user-info-block{
+      display: block;
+      padding: 0 15px;
+    }
+
+    .user-title {
+      color: $dark-gray;
+      display: block;
+      font-size: 16px;
+      margin-bottom: 6px;
+      line-height: 16px;
+
+      .user-title-header {
+        font-weight: 600;
+      }
+    }
+
+    .user-company {
+      font-size: 15px;
+      line-height: 15px;
+
+      .user-title-header {
+        font-weight: 600;
+      }
+    }
+
+    &.hovercard:hover{
+      overflow: visible;
+
+      .userbox {
+        border: 1px solid $gray-2;
+        min-height: 450px;
+        position: absolute;
+        z-index: 6;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        background: $white;
+        box-shadow: 0 2px 6px 2px $gray;
+      }
+    }
+  }
+
+  &.usergrid {
+    .user {
+      width: 322px;
+      float: left;
+      position: relative;
+    }
+  }
+}
