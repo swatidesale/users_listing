@@ -1,0 +1,51 @@
+.card {
+  margin-top: 50px;
+  background: #eee;
+  padding: 3em;
+  line-height: 1.5em;
+}
+
+.container {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 12px;
+}
+
+.profile-img-default {
+  max-width: 100%;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 12px;
+}
+
+.user-name {
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-transform: UPPERCASE;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.contact-info {
+  margin-bottom: 15px;
+}
+
+.header {
+  font-weight: bold;
+}
+
+.company-details {
+  text-transform: UPPERCASE;
+  margin: 0
+}
